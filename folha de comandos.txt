@@ -38,5 +38,8 @@ git commit -m "First commit"
 git push origin master
 git push -u origin master
 
+Listar branchs:
+git branch -v
+
 add remote:
 git remote add origin https://github.com/gabrises/sitedocursodjango
