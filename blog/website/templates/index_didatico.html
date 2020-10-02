@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+</head>
+<body>
+	<h1 align="center">Blogzada do bebel</h1>
+	{{ name }}
+
+	<ol>
+		{% for item in listatec %}
+
+			{% if item == 'gabriel' %}
+				<li><b> {{ item }} </b></li>
+			{% else %}
+				<li> {{ item }} </li>
+			{% endif %}
+
+		{% endfor %}
+	</ol>
+
+	{% for post in posts %}
+		<h2 align="center">
+			{{ post.title }}
+		</h2>
+		<h3 align="center">
+			{{ post.sub_title }}
+		</h3>
+		<p align="center">
+			{{ post.content }}
+		</p>
+		<br>
+	{% endfor %}
+</body>
+</html>
